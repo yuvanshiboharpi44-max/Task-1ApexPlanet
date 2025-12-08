@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Plant Design</title>
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+       <div class="left-col">
+          <img src="download.png" class="logo">
+
+          <div class="content">
+            <h1>Add plants to</br> your living space</h1>
+            <p>Plants are an inexpensive means to accessorizing your space
+                and adding color and texture.</p>
+                <button type="button">LEARN MORE</button>
+         </div>
+        </div>
+       <div class="right-col">
+
+        <div class="slider">
+          <img src="pic-1.jpg" id="Slide">
+        </div>
+        <div class="slider-content">
+          <h2>Where can I find ideas for small rooms?</h2>
+          <hr>
+          <p>They can absorb pollutants and remove harmful gases from the air. No home<br> should be without these wonderful greens! Desgining small rooms comes with a<br> completely different challenge.</p>
+          <div class="controller">
+            <img src="back.png" id="BackBtn">
+            <div class="vertical-line"></div>
+            <img src="next.png" id="NextBtn">
+         </div>
+
+      </div>
+
+     </div>
+  </div>
+<script>
+          var slide = document.getElementById("Slide");
+          var BackBtn = document.getElementById("BackBtn");
+          var NextBtn = document.getElementById("NextBtn");
+
+          var  Slideimages=[
+                "pic-1.jpg",
+                "pic-2.jpg",
+                "pic-3.jpg",
+                "pic-4.jpg",
+      
+          ];
+  let i=0;
+
+      NextBtn.onclick=function(){
+                   i++;
+                   if(i>Slideimages.length-1){
+                   i=0;
+                   }
+                   slide.src=Slideimages[i];
+        }
+      BackBtn.onclick=function(){
+        i--;
+        if(i<0){
+          i=Slideimages.length-1;
+        }
+        Slide.src=Slideimages[i];
+      }
+    </Script>
+</body>
+</html>
