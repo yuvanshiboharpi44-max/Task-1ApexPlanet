@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+header {
+    background: #0078ff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0003;
+}
+/* Contact Form */
+.form-section {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* To-do */
+.todo-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#taskList li {
+    list-style: none;
+    background: white;
+    padding: 10px;
+    margin: 5px auto;
+    width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

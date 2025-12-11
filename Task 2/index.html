@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Smart Webpage</h1>
+        <p>Created using HTML, CSS, and JavaScript</p>
+    </header>
+
+    <!-- Responsive Layout (Flex + Grid) -->
+    <section class="container">
+        <div class="box">Responsive Box 1</div>
+        <div class="box">Responsive Box 2</div>
+        <div class="box">Responsive Box 3</div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <textarea id="message" placeholder="Enter Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="error" class="error"></p>
+    </section>
+
+    <!-- Dynamic To-Do List -->
+    <section class="todo-section">
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter task...">
+        <button id="addTask">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
